@@ -1,8 +1,9 @@
 <?php
     
-    $filename = $argv[1];
-    $column_num = $argv[2];
-    $key = $argv[3];
+    //Get the inputs
+    $filename = $argv[1]; // path to a CSV file
+    $column_num = $argv[2]; //  the index of the column to search in
+    $key = $argv[3]; // represents the search key
     
     
     if (($fp = fopen($filename, "r")) !== false) {
@@ -16,6 +17,6 @@
     }
 
     ?>
-    
+
 
 
